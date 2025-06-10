@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARDEC RUNNER'S</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+</head>
+
+<body>
+    
+<header>
+    <div class="logo-position">
+        <img class="logo" src="img/logo.jpeg"> 
+    </div> 
+        <Div class="RUNNERS">
+        KARDEC RUNNER'S 
+        </Div>
+</header>
+
+<main>
+    
+    <div class="tudo">
+
+    <div class="imagens">
+        <img class="camisetas2" src="img/camisetas.jpeg">
+
+        <div class="viseira">
+        <img src="img/viseira.jfif">
+        </div>
+    </div> 
+
+    </div>
+
+    <div class="ver1">
+    <a href="index2.html" class="link-com-transicao"> ver informacoes</a>
+    </div>
+
+    <div class="ver">
+        <a href="index3.html" class="link-com-transicao"> ver informacoes</a>
+        </div>
+
+</main>
+
+
+<script>
+    const links = document.querySelectorAll('.link-com-transicao');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e){
+            e.preventDefault();
+
+            document.body.classList.add('fade-out');
+
+
+            setTimeout(() => {
+                window.location.href = link.href;
+            }, 900)
+        })
+    })
+</script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+
+
+
+</html>
